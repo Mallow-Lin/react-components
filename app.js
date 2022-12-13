@@ -33,9 +33,11 @@ const GroceryListItem = (props) => {
 }
 
 const GroceryList = (props) => {
-  <div id="app">
+  <ul>
     {props.groceryItems.map((groceryItem) => ( // update the 'GroceryList' to use the new 'GroceryListItem' component
       <GroceryListItem groceryItem = {groceryItem}/>
     ))}
-  </div>
+  </ul>
 }
+
+ReactDom.render(<GroceryList />, document.getElementById('app'));
