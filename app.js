@@ -26,9 +26,9 @@ const GroceryListItem = (props) => {
   }
 
   return (
-    <ul>
-      <li style = {style} onclick = { () => setIsDone(!isDone)}>{props.groceryItem}</li>
-    </ul>
+      <li style = {style} onClick = {() => setIsDone(!isDone)}>
+        {props.groceryItem}
+      </li>
   )
 }
 
